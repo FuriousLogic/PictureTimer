@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="uk.co.furiouslogic.picturetimer" >
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <uses-feature android:name="android.hardware.Camera" />
+    <uses-feature
+        android:name="android.hardware.Camera.front"
+        android:required="false" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name=".SimpleTextActivity"
+            android:label="@string/title_activity_simple_text" >
+        </activity>
+        <activity
+            android:name=".SimpleListActivity"
+            android:label="SimpleListActivity" >
+        </activity>
+        <activity
+            android:name=".SimplePictureActivity"
+            android:label="SimplePictureActivity" >
+        </activity>
+        <activity
+            android:name=".TimersActivity"
+            android:label="@string/title_activity_timers" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".NewTimerActivity"
+            android:label="@string/title_activity_new_timer" >
+        </activity>
+    </application>
+
+</manifest>
